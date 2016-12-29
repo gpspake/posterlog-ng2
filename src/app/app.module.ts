@@ -11,6 +11,8 @@ import { AboutComponent } from './about/about.component';
 import { PostersComponent } from './posters/posters.component';
 import { PosterComponent } from './posters/poster/poster.component';
 import { PostersService } from "./common/posters.service";
+import { PosterListComponent } from './posters/poster-list/poster-list.component';
+import { PosterDetailComponent } from './posters/poster-detail/poster-detail.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { PostersService } from "./common/posters.service";
     AboutComponent,
     PostersComponent,
     PosterComponent,
+    PosterListComponent,
+    PosterDetailComponent,
   ],
   imports: [
     BrowserModule,

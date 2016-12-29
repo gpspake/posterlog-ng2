@@ -1,0 +1,8 @@
+<div class="mdl-grid">
+  <poster
+      class="mdl-cell mdl-cell--3-col mdl-card mdl-shadow--2dp poster"
+      *ngFor="let poster of posters"
+      [poster]="poster"
+      (click)="onSelected(poster)">
+  </poster>
+</div>

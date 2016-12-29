@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Poster } from '../common/poster.model';
-import { PostersService } from '../common/posters.service';
-import {PosterComponent} from "./poster/poster.component";
+import { PosterListComponent } from "./poster-list/poster-list.component";
+import {PosterDetailComponent} from "./poster-detail/poster-detail.component";
 
 @Component({
   selector: 'posters',
@@ -10,14 +9,10 @@ import {PosterComponent} from "./poster/poster.component";
 
 })
 export class PostersComponent implements OnInit {
-  posters: Poster[];
 
-  constructor(private _postersService: PostersService) {
-
-  }
+  constructor() {}
 
   ngOnInit() {
-    this.posters = this._postersService.getPosters();
   }
 
 }

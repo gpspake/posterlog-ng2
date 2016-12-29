@@ -1,12 +1,9 @@
 <div class="mdl-grid">
   <div class="mdl-cell mdl-cell--8-col">
-    <!--poster list-->
-    <div class="mdl-grid">
-      <poster class="mdl-cell mdl-cell--3-col mdl-card mdl-shadow--2dp poster" *ngFor="let poster of posters" [poster]="poster"></poster>
-    </div>
+    <poster-list (posterSelected)="selectedPoster = $event"></poster-list>
   </div>
 
   <div class="mdl-cell mdl-cell--4-col">
-    <!--poster detail-->
+    <poster-detail  [selectedPoster]="selectedPoster"></poster-detail>
   </div>
 </div>
