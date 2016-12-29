@@ -1,4 +1,4 @@
-# AngularPosters
+# Poster Log
 
 A catalog of my poster collection built with Angular 2
 
